@@ -1,0 +1,77 @@
+/*
+.carta{
+    border-radius: 2px;
+    border: darkgray 10px inset;
+    width: 550px;
+    height: 99%;
+    border-radius: 25px;
+    background-image: url("imagenes/fondoAgua.jpg");
+}
+
+.titulo{
+    border: gray 10px outset;
+    margin: 6px;
+    text-align: center;
+    border-radius: 15px;
+}
+.imagen{
+    border: black 2px solid;
+    margin: 7px;
+    height: 400px;
+    text-align: center;
+    border-radius: 20px;
+}
+.foto{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+
+}
+.descripcion{
+    border: gray 10px outset;
+    margin: 7px;
+    border-radius: 15px;
+}
+.letra{
+    font-family: "Noto Sans", serif;
+}
+
+ */
+
+body{
+    background-image: url("imagenes/fondoAgua.jpg");
+    border: 0px;
+}
+.titulo{
+    border: gray 10px outset;
+    margin: 6px;
+    text-align: center;
+    border-radius: 15px;
+}
+.imagen{
+    border: gray 10px outset;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+    margin: 7px;
+}
+.foto{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+.cabeceraDescripcion{
+    height: 20px;
+    width: 100%;
+    border: gray 10px outset;
+}
+.descripcion{
+    border: gray 10px outset;
+    margin: 7px;
+    border-radius: 15px;
+}
+
+
+
+
