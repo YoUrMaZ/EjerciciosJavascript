@@ -1,15 +1,16 @@
-var nombre = prompt("como te llamas?");
-var numero = prompt("Cuantos nombres deseas introducir")
+var nombre = "";
+var array = [];
 
-
-if (nombre === undefined) {
-    alert("Ha pulsado cancelar");
-} else if (nombre === "") {
-    alert("Ha pulsado aceptar con el campo vacio");
-} else {
-    for (var i = 0; i < numero.length; i++) {
-        document.write(numero[i]);
+do {
+    nombre = prompt("Introduce nombres:");
+    if (nombre != null) {
+        nombre = nombre.trim();
     }
-}
-document.write(nombre1);
+    if (nombre) {
+        array.push(nombre);
+    }
+} while (nombre);
 
+for (var i in array) {
+    console.log(array[i]);
+}
