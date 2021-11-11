@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+        pre {
+            background: #cacaca;
+            border: 1px solid;
+            padding: 10px;
+            white-space: unset;
+        }
+
+        h3, ul {
+            margin: 2px 0px;
+        }
+    </style>
+    <title></title>
+
+    <script type="text/javascript">
+        function comparar() {
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var resultado = ""
+
+            if (num1 >= num2) {
+                resultado = "el numero mayor es " + num1
+            } else {
+                resultado = "el numero mayor es " + num2
+            }
+            document.getElementById("resultado").innerHTML = resultado;
+        }
+
+        function bisiesto() {
+        	var resultado = "";
+			var ano = document.getElementById("año").value;
+			if ((ano % 4 && ano % 100 !== 0) || (ano % 400 === 0)){
+				resultado = 'El' + ano + 'es bisiesto';
+			} else {
+				resultado = 'El ' + ano + ' no es bisiesto';
+			}
+			document.getElementById("resultado2").innerHTML = resultado;
+        }
+
+        function registrar(){
+        	var usuarioAcceso = "Gwenevere"
+			var contrasenaAcceso = "excalibur"
+
+			var usuario = document.getElementById("usu").value;
+        	var contrasena = document.getElementById("pass").value;
+        	var resultado = "";
+        	if (usuarioAcceso === usuario && contrasenaAcceso === contrasena) {
+        		resultado = "Usuario y contraseña correctos. Puede ingresar a Camelot"
+			} else {
+        		resultado = "Acceso denegado"
+			}
+        	document.getElementById("resultado3").innerHTML = resultado;
+		}
+		function contarVocales(frase){
+
+        	if (typeof frase != 'string')
+        		throw  TypeError('El argumetno debe de ser una cadena de caracteres');
+        	let vocales = 'aeiouAEIOU';
+        	let contadorVocales = 0;
+
+			for (let i = 0; i < frase.length; i++) {
+				if (vocales.indexOf(frase[i]) !== -1){
+					++contadorVocales;
+				}
+			}
+			return contadorVocales
+
+		}
+
+    </script>
+</head>
+<body>
+
+<pre>
+		<b>Ejercicio 1</b>
+		<h3>Compara dos numeros introducidos por el usuario en un formulario y muestra cual es el mayor</h3>
+			<input type="text" id="num1">
+			<input type="text" id="num2">
+			<input type="submit" value="COMPARAR" onclick="comparar()">
+			<div id="resultado"></div>
+
+
+		<hr/>
+		<b>Ejercicio 2</b>
+		<h3>Escribe un programa que permita saber si un año es bisiesto. Para que un año sea bisiesto debe ser divisible por 4 y no debe ser divisible por 100, excepto que también sea divisible por 400.</h3>
+
+	<input type="text" id="año">
+	<input type="submit" value="Bisiesto" onclick="bisiesto()"/>
+	<div id="resultado2"></div>
+
+	<hr/>
+		<b>Ejercicio 3</b>
+		<h3>Escribí un programa que solicite ingresar un nombre de usuario y una contraseña. Si el nombre es “Gwenevere” y la contraseña es “excalibur”, mostrar en pantalla “Usuario y contraseña correctos. Puede ingresar a Camelot”. Si el nombre o la contraseña no coinciden, mostrar “Acceso denegado”.</h3>
+
+	<input type="text" id="usu">
+	<input type="text" id="pass">
+	<input type="submit" onclick="registrar()">
+	<div id="resultado3"></div>
+
+		<hr/>
+		<b>Ejercicio 4</b>
+		<h3>Escribe un programa que, dada una frase por el usuario, muestre la cantidad total de vocales (tanto mayúsculas como minúsculas) que contiene.</h3>
+	<input type="text" id="vocales"/>
+	<input type="submit" id="envio" />
+
+		<hr/>
+		<b>Ejercicio 5</b>
+		<h3>
+		Escribí una función llamada esPar que reciba como parámetro un número y retorne True si el número es par ó False si es impar. Utilizar esta función en un programa que solicite al usuario el ingreso de 10 números y que luego muestre, por separado, la suma de todos los pares y la suma de todos los impares.</h3>
+
+
+
+
+
+	</pre>
+
+</body>
+</html>
