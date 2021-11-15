@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="arbol.js"></script>
+    <script src="flores.js"></script>
+    <script src="fruta.js"></script>
+    <script type="text/javascript" >
+        var nombre = prompt("Introduce el tipo de arbol");
+        document.addEventListener("DOMContentLoaded", function (event){
+            arbol.init(nombre);
+        })
+        setInterval('arbol.pasarHora()', 10);
+        setInterval('if (arbol.estaVivo()){arbol.pasarHora()}', 10)
+    </script>
+</head>
+<body>
+
+<div id="arbol"></div>
+<div id="boton">
+    <button onclick="arbol.regar()">regar</button>
+</div>
+
+</body>
+</html>

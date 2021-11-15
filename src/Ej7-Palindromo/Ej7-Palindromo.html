@@ -25,7 +25,7 @@
             console.log(palabra);
 
             for (var i = 0; i < palabra.length; i++) {
-                if(palabra[i] != palabra[palabra.length-1-i]){
+                if(palabra[i] !== palabra[palabra.length-1-i]){
 
                     document.getElementById('palabra').setAttribute('style','background:#AA0000');
                     return false;
