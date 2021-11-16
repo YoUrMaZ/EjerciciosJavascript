@@ -10,9 +10,10 @@
         var nombre = prompt("Introduce el tipo de arbol");
         document.addEventListener("DOMContentLoaded", function (event){
             arbol.init(nombre);
+
         })
         setInterval('arbol.pasarHora()', 10);
-        setInterval('if (arbol.estaVivo()){arbol.pasarHora()}', 10)
+        setInterval('if (arbol.estaVivo()){arbol.pasarHora()}', 1000)
     </script>
 </head>
 <body>

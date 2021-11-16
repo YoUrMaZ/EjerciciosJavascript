@@ -31,6 +31,7 @@ var arbol = {
 
         var representacionArbol = "<h1>" + this.nombre + "</h1>";
         representacionArbol += "<img src=\"arbol.jpg\" width=\"100px\"/>";
+        representacionArbol +=
         representacionArbol += "<h1> Edad: " + this.edad + "</h1>";
         representacionArbol += "<h1> Agua: " + this.agua + "</h1>";
         representacionArbol += "<h1> Vida: " + this.vida + "</h1>";
