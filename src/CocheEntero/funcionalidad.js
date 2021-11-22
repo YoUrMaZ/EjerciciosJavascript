@@ -25,8 +25,8 @@ var Coche = {
         this.gasolina = 50;
         this.dinero = 100;
         this.consumo = 7;
-        this.histoViajes = new Array();
-        this.histoRepostajes = new Array();
+        this.histoViajes = [];
+        this.histoRepostajes = [];
     },
 
     viajar: function(kilometros) {
@@ -77,7 +77,7 @@ var Gasolinera = {
 
     vender: function(matricula, cantidad) {
 
-        var registro = new Array();
+        var registro = [];
         registro['matricula'] = matricula;
         registro['cantidad'] = cantidad;
         registro['dia'] = String(hoy.getDate()).padStart(2, '0') + '-' + String((hoy.getMonth() + 1)).padStart(2, '0') + '-' + hoy.getFullYear();
