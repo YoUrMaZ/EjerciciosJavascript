@@ -16,19 +16,18 @@
     <title></title>
 
     <script type="text/javascript">
-
         function createProcess(nombre, creacion, uso, matriz) {
             var array = [nombre, creacion, uso];
             matriz.push(array);
             return matriz;
+        };
 
         matriz = [];
         matriz = createProcess('C',1,1, matriz);
         matriz = createProcess('A',0,3, matriz);
         matriz = createProcess('B',2,4, matriz);
 
-        matriz.sort(compareProcess);
-        console.log(matriz);
+        console.log(matriz)
     </script>
 </head>
 <body>
